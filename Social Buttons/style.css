@@ -1,0 +1,116 @@
+:root{
+    --fondo-fb: rgba(1, 29, 245, 0.993);
+    --fondo-tiktok:rgba(154, 150, 150, 0.675);
+    --fondo-twitter:rgb(82, 42, 226);
+    --fondo-linkendin:rgb(173, 216, 230);
+    --fondo-github:rgb(64, 234, 64);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 10px;
+}
+
+.contenedor i{
+    font-size: 50px;
+}
+
+
+
+.boton{
+    padding: 9px 10px;
+    border-radius: 50%;
+    display:block;
+    transition: all 1s ease-out  ;
+    
+
+}
+/*CONTENEDOR FACEBOOK*/
+
+.contenedor-fb:hover{
+    background-color: var(--fondo-fb);
+
+    box-shadow: 2px 2px 50px 25px rgb(51, 37, 208);
+}
+
+/*CONTENEDOR TIKTOK*/
+
+
+.contenedor-tiktok:hover{
+    box-shadow: 2px 2px 50px 25px rgba(47, 44, 44, 0.871);
+    background-color: var(--fondo-tiktok);
+}
+
+.contenedor-tiktok:hover .fa-tiktok{
+    color: rgb(217, 211, 211);
+}
+
+/*Contenedor Twitter*/
+
+.contenedor-twitter:hover{
+    box-shadow: 2px 2px 50px 25px rgb(42, 14, 144);
+    background-color: var(--fondo-twitter);
+}
+
+/*contenedor linkendin*/
+.contenedor-linkendin:hover{
+    box-shadow: 2px 2px 50px 25px rgb(123, 222, 255);
+    background-color: var(--fondo-linkendin);
+}
+.contenedor-linkendin:hover .fa-linkedin{
+    color: rgb(50, 117, 140);
+}
+
+
+/*Contenedor github*/
+.contenedor-github:hover{
+    background-color: var(--fondo-github);
+    box-shadow: 2px 2px 50px 25px rgb(35, 184, 35);
+}
+
+.boton a i{
+    color: black;
+}
+
+.contenedor .fa-github{
+    text-shadow: 1px 1px 1px rgba(128, 24, 226, 0.5);
+}
+
+.contenedor .fa-facebook:hover{
+    color: rgb(95, 95, 253);
+    transform: scale(1);
+}
+.boton:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+
+@media (max-width: 750px) {
+    .contenedor{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+    .boton{
+        width: 60px;
+    }
+  }
